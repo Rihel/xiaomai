@@ -52,6 +52,7 @@ input {
     border: none;
     border-radius: rem(5);
     color: #fff;
+    text-align: center;
     margin: {
         top: rem(10);
         bottom: rem(10);
@@ -64,5 +65,6 @@ input {
     &.btn-block {
         width: 100%;
         display: block;
+        text-align: center;
     }
 }

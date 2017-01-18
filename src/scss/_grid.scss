@@ -1,7 +1,7 @@
 .container {
     @include clearfix;
     @include blockCenter;
-    padding: 0 rem(15);
+    padding: 0 rem(10);
 }
 
 .container-fluid {
@@ -14,7 +14,7 @@
 }
 
 .row {
-    margin: 0 rem(-15);
+    margin: 0 rem(-10);
     @include clearfix;
 }
 

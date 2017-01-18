@@ -1,15 +1,32 @@
 'use strict';
 
 $(function () {
-    $.ajax({
-        url: 'data.json',
-        type: 'GET',
-        success: function success(data) {
+	$('.card').mouseover(function () {
+		console.log($(this).hasClass('active'));
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active');
+		} else {
 
-            $(data).each(function (index, data) {
-
-                $('#container').append('<div class="row">\n                        <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6">\n\t\t\t\t\t<div class="card">\n                        <img src="' + data.mdImg + '" alt="" class="img">\n                      \n                    </div>\n\t\t\t\t</div>\n                    </div>\n');
-            });
-        }
-    });
+			$(this).addClass('active');
+		}
+	});
+	var time = 0;
+	var go = setInterval(function () {
+		if (time < $('#container').find('.card').length) {
+			$('#container').find('.card').removeClass('border');
+			$('#container').find('.card').eq(time).addClass('border');
+			time++;
+		} else {
+			time = 0;
+		}
+	}, 300);
+	$('#ting').click(function () {
+		clearInterval(go);
+		$('#container').find('.card').each(function (i, ele) {
+			if ($(ele).hasClass('border')) {
+				$(this).addClass('active');
+				return false;
+			}
+		});
+	});
 });

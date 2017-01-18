@@ -1,22 +1,30 @@
 $(() => {
-    $.ajax({
-        url: 'data.json',
-        type: 'GET',
-        success: (data) => {
+	$('.card').mouseover(function(){
+		console.log($(this).hasClass('active'));
+		if($(this).hasClass('active')){
+			$(this).removeClass('active');
+		}else{
 
-            $(data).each((index, data) => {
-
-                $('#container').append(
-                    `<div class="row">
-                        <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6">
-					<div class="card">
-                        <img src="${data.mdImg}" alt="" class="img">
-                      
-                    </div>
-				</div>
-                    </div>
-`)
-            })
-        }
-    })
+			$(this).addClass('active');
+		}
+	});
+	let time=0;
+	let go=setInterval(()=>{
+		if(time<$('#container').find('.card').length){
+			$('#container').find('.card').removeClass('border');
+			$('#container').find('.card').eq(time).addClass('border');
+			time++;
+		}else {
+			time=0;
+		}
+	},300);
+	$('#ting').click(function(){
+		clearInterval(go);
+		$('#container').find('.card').each(function(i,ele){
+			if($(ele).hasClass('border')){
+				$(this).addClass('active');
+				return false;
+			}
+		})
+	})
 })

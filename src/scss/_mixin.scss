@@ -41,7 +41,7 @@
       .col-#{$type}-#{$i}{
         float: left;
         width: 100%*($i/12);
-        padding: 0 rem(15);
+        padding: 0 rem(10);
       }
       .col-#{$type}-offset-#{$i}{
         margin-left: 100% * ($i / 12);
