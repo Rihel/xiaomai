@@ -8,96 +8,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/index.css">
-
-
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mmenu.min.all.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/Chart.js"></script>
 </head>
 
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="col-md-6">
-                欢迎来到小麦金福！
+
+    <div class="login-form">
+        <div class="banner">
+
+            <div class="banner-text">
+                <div class="menu">
+                    <span class="menu-icon"><a href="#"><img src="images/menu-icon.png" alt=""/></a></span>
+                    <ul class="nav1">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <!-- script-for-menu -->
+                    <script>
+                        $("span.menu-icon").click(function() {
+                            $("ul.nav1").fadeToggle();
+                        });
+                    </script>
+                    <!-- /script-for-menu -->
+                </div>
+                <div class="title">
+                    <div class="title-left">
+                        <img src="images/img1.jpg" alt="" />
+                    </div>
+                    <div class="title-right">
+                        <h2>Bruce_lee</h2>
+                        <!--<h6>UI/UX Designer</h6>-->
+                    </div>
+                    <div class="clear"> </div>
+                </div>
             </div>
-            <div class="nav">
-                <ul>
-                    <li><a href="#">nav1</a></li>
-                    <li><a href="#">nav2</a></li>
-                    <li><a href="#">nav3</a></li>
-                </ul>
+        </div>
+        <div class="clear"> </div>
+        <div class="banner-bottom">
+            <div class="banner-bottom-left">
+                <h3>13</h3>
+                <p>团队人数</p>
             </div>
+            <div class="banner-bottom-right">
+                <h3>25</h3>
+                <p>可用余额</p>
+            </div>
+            <div class="clear"> </div>
+        </div>
+        <div class="work-text">
+            <h3>TODAY</h3>
+            <section class="ac-container">
+                <div>
+                    <input id="ac-1" name="accordion-1" type="checkbox" />
+                    <label for="ac-1" class="grid1"><i></i>Finish landing page concept</label>
+                    <article class="ac-small">
+                        <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
+                    </article>
+                </div>
+                <div>
+                    <input id="ac-2" name="accordion-1" type="checkbox" />
+                    <label for="ac-2" class="grid2"><i></i>Design app illustrations</label>
+                    <article class="ac-small">
+                        <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
+                    </article>
+                </div>
+                <div>
+                    <input id="ac-3" name="accordion-1" type="checkbox" />
+                    <label for="ac-3" class="grid3"><i></i>Javascript training</label>
+                    <article class="ac-small">
+                        <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
+                    </article>
+                </div>
+                <div>
+                    <input id="ac-4" name="accordion-1" type="checkbox" />
+                    <label for="ac-4" class="grid4"><i></i>Surprise Party for Meet</label>
+                    <article class="ac-small">
+                        <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
+                    </article>
+                </div>
+            </section>
         </div>
     </div>
-    <div class="container" id="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <div class="card border">
-                    <div class="up">点击我获得大奖</div>
-                    <div class="down">多谢惠顾</div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <div class="card">
-                    <div class="up">点击我获得大奖</div>
-                    <div class="down">多谢惠顾</div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <div class="card">
-                    <div class="up">点击我获得大奖</div>
-                    <div class="down">多谢惠顾</div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <div class="card">
-                    <div class="up">点击我获得大奖</div>
-                    <div class="down">多谢惠顾</div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <div class="card">
-                    <div class="up">点击我获得大奖</div>
-                    <div class="down">多谢惠顾</div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <div class="card">
-                    <div class="up">点击我获得大奖</div>
-                    <div class="down">多谢惠顾</div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <div class="card">
-                    <div class="up">点击我获得大奖</div>
-                    <div class="down">多谢惠顾</div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <div class="card">
-                    <div class="up">点击我获得大奖</div>
-                    <div class="down">多谢惠顾</div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <div class="card">
-                    <div class="up">点击我获得大奖</div>
-                    <div class="down">多谢惠顾</div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <div class="card">
-                    <div class="up">点击我获得大奖</div>
-                    <div class="down">多谢惠顾</div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="btn btn-primary btn-block" id="ting">点击暂停</div>
-            </div>
-        </div>
-    </div>
+
     <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/index.js"></script>
 </body>
 
